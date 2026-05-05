@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Catálogo de Personagens - Rick and Morty</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="cabecalho-conteudo">
+      <span class="etiqueta">API de desenhos</span>
+      <h1>Catálogo de Personagens</h1>
+      <p>
+        Projeto front-end com consumo de API pública, busca por nome,
+        cards dinâmicos e lista de favoritos salva no navegador.
+      </p>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <section class="barra-superior">
+      <div class="campo-busca">
+        <input
+          type="text"
+          id="campoBusca"
+          placeholder="Buscar personagem pelo nome..."
+        />
+        <button id="botaoBuscar">Buscar</button>
+        <button id="botaoLimpar">Limpar</button>
+      </div>
+
+      <button class="botao-favoritos-topo" id="botaoFavoritos">
+        Favoritos <span id="contadorFavoritos">0</span>
+      </button>
+    </section>
+
+    <section class="status" id="mensagemStatus">Carregando personagens...</section>
+
+    <section class="container-cards" id="cardsContainer">
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Desenvolvido com HTML, CSS e JavaScript puro.</p>
+    <p>API utilizada: Rick and Morty API.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
